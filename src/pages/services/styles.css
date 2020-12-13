@@ -1,0 +1,33 @@
+.add-form form {
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid white;*/
+    max-height: 100px;
+    margin: 10px;
+    align-items: center;
+}
+
+form input {
+    padding: 5px;
+    margin: 5px;
+    color: deepskyblue;
+}
+form input:not([type = 'file']),select{
+    border: 2px solid deepskyblue;
+    color: blue;
+}
+
+form select {
+    padding: 5px 10px;
+    margin: 5px;
+}
+form button {
+    padding: 5px 25px;
+    border: 2px solid greenyellow;
+    width: 100px;
+    text-decoration: none;
+    color: greenyellow;
+    font-weight: bold;
+    background: inherit;
+    margin: 5px;
+}

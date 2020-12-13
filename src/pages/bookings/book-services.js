@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import BookingPayModal from "../components/bookingPayModal";
+import BookingPayModal from "../../components/bookingPayModal";
 import axios from "axios";
-import { ApiUrl } from "../config/apiUrl";
+import { ApiUrl } from "../../config/apiUrl";
+import "./styles.css";
 
 export class BookServices extends Component {
   state = {
@@ -67,7 +68,7 @@ export class BookServices extends Component {
   render() {
     return (
       <div>
-        <h1>Book services</h1>
+        <h1 className="home-header">Book services</h1>
         {this.state.services &&
           this.state.services.map((service) => (
             <div key={service._id} className="service-card">
@@ -75,7 +76,7 @@ export class BookServices extends Component {
                 src="https://cdn1.goibibo.com/voy_mmt/t_g/htl-imgs/201906151747438570-5ced5052caf811e99e200242ac110002.jpg"
                 alt=""
               />
-              <h5>Type: {service.service_type}</h5>
+              <p>Type: {service.service_type}</p>
               <p>Description {service.description}</p>
               <p>price :${service.price}</p>
               <p>Discount: {service.discount}%</p>

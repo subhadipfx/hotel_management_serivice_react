@@ -1,0 +1,37 @@
+.service-card,
+.booking-card,
+.myBooking-card {
+    border: 1px solid deepskyblue;
+    margin: 1rem auto;
+    max-width: 500px;
+    color: white;
+    padding: 1%;
+}
+
+.service-card img,
+.booking-card img,
+.myBooking-card img {
+    width: 100%;
+    border: 2px solid white;
+}
+
+.service-card button,
+.booking-card button,
+.myBooking-card button {
+    padding: 10px;
+    border: 2px solid greenyellow;
+    width: 100px;
+    text-decoration: none;
+    color: greenyellow;
+    font-weight: bold;
+    background: inherit;
+}
+
+.MuiDialog-paperWidthSm {
+    width: 600px;
+    text-align: center;
+}
+
+.booking-card button{
+    margin: 0 5px;
+}

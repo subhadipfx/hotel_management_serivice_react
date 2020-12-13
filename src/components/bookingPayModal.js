@@ -65,7 +65,7 @@ export default function BookingPayModal({
   };
 
   return (
-    <div>
+    <div className="pay-modal">
       <Dialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
@@ -75,13 +75,13 @@ export default function BookingPayModal({
           Confirm Payment
         </DialogTitle>
         <DialogContent dividers>
-          <Typography gutterBottom>Type {booking.service_type}</Typography>
+          <Typography gutterBottom>Type : {booking.service_type}</Typography>
           <Typography gutterBottom>
-            Description :{booking.description}
+            Description : {booking.description}
           </Typography>
-          <Typography gutterBottom>Price :{booking.price}</Typography>
+          <Typography gutterBottom>Price : {booking.price}</Typography>
           <Typography gutterBottom>
-            Discounted Price :
+            Amount Payable :
             {parseInt(booking.price) -
               Math.round(parseInt(booking.price) * parseInt(booking.discount)) /
                 100}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { ApiUrl } from "../config/apiUrl";
-import MybookingItems from "../components/my-bookingItems";
+import { ApiUrl } from "../../config/apiUrl";
+import MybookingItems from "../../components/my-bookingItems";
 
 export class MyBookings extends Component {
   state = {

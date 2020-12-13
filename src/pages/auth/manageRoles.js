@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import UserTable from "../components/userTable";
+import UserTable from "../../components/userTable";
 import axios from "axios";
-import { ApiUrl } from "../config/apiUrl";
+import { ApiUrl } from "../../config/apiUrl";
 
 export class ManageRoles extends Component {
   state = {

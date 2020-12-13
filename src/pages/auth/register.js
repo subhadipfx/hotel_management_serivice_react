@@ -21,9 +21,15 @@ export class Register extends Component {
   };
   render() {
     return (
-      <div>
-        <h1>Register</h1>
-        <form onSubmit={(e) => this.handleSubmit(e)}>
+      <div className="login">
+        <h1 className="login-header">Register</h1>
+        <form className="login-container" onSubmit={(e) => this.handleSubmit(e)}>
+          <input
+              type="text"
+              placeholder="Name"
+              value={this.state.username}
+              onChange={(e) => this.setState({ username: e.target.value })}
+          />
           <input
             type="email"
             value={this.state.email}
@@ -31,22 +37,16 @@ export class Register extends Component {
             onChange={(e) => this.setState({ email: e.target.value })}
           />
           <input
-            type="text"
-            placeholder="Name"
-            value={this.state.username}
-            onChange={(e) => this.setState({ username: e.target.value })}
-          />
-          <input
             type="password"
             placeholder="Password"
             value={this.state.password}
             onChange={(e) => this.setState({ password: e.target.value })}
           />
-          <button type="submit">login</button>
-        </form>
-        <p>
+          <p>
+            <input type="submit" value="Log in"/>
+          </p>
           Have an account <Link to="/login">Login</Link>
-        </p>
+        </form>
       </div>
     );
   }

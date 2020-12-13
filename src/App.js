@@ -6,16 +6,16 @@ import {
   Switch,
 } from "react-router-dom";
 import Home from "./pages/home";
-import Login from "./pages/login";
-import Register from "./pages/register";
+import Login from "./pages/auth/login";
+import Register from "./pages/auth/register";
 import { Component } from "react";
 import axios from "axios";
-import ManageServices from "./pages/manageServices";
-import ManageRoles from "./pages/manageRoles";
-import ManageBookings from "./pages/manageBookings";
-import BookServices from "./pages/book-services";
+import ManageServices from "./pages/services/manageServices";
+import ManageRoles from "./pages/auth/manageRoles";
+import ManageBookings from "./pages/bookings/manageBookings";
+import BookServices from "./pages/bookings/book-services";
 import { ApiUrl } from "./config/apiUrl";
-import MyBookings from "./pages/my-bookings";
+import MyBookings from "./pages/bookings/my-bookings";
 
 class App extends Component {
   state = {
@@ -91,7 +91,9 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.user.token && (
-          <button onClick={() => this.logout()}>Logout</button>
+            <div>
+              <button className="logout" onClick={() => this.logout()}>Logout</button>
+            </div>
         )}
         <Router>
           <Switch>

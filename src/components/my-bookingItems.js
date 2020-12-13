@@ -16,11 +16,11 @@ export class MybookingItems extends Component {
         />
         {booking.service && (
           <>
-            <h5>Type: {booking.service.service_type}</h5>
-            <p>Description {booking.service.description}</p>
+            <p>Type : {booking.service.service_type}</p>
+            <p>Description : {booking.service.description}</p>
           </>
         )}
-        <p>Status {booking.status}</p>
+        <p>Status : {booking.status}</p>
         {booking.status === "CHECK_OUT" && (
           <>
             <select

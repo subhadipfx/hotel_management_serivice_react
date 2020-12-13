@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 .App {
   text-align: center;
   padding: 1rem;
@@ -38,18 +40,8 @@
   }
 }
 
-.service-card,
-.booking-card,
-.myBooking-card {
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  margin: 1rem auto;
-  max-width: 500px;
-}
-.service-card img,
-.booking-card img,
-.myBooking-card img {
-  width: 100%;
-}
+
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -65,4 +57,23 @@ th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: slategrey;
+}
+
+.logout{
+  position: absolute;
+  right: 10rem;
+  padding: 10px;
+  border: 2px solid red;
+  width: 100px;
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  background: antiquewhite;
+  cursor: pointer;
 }
