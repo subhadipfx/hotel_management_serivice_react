@@ -25,7 +25,7 @@ export class MybookingItems extends Component {
           <>
             <select
               name="rating"
-              value={this.status.rating}
+              value={this.state.rating}
               onChange={(e) => this.setState({ rating: e.target.value })}
             >
               <option value="1">1</option>
