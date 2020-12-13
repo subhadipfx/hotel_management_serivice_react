@@ -34,6 +34,7 @@ export class ManageBookings extends Component {
         },
       })
       .then((res) => {
+        alert(res.data.message)
         this.getBookings();
       })
       .catch((err) => {
