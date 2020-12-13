@@ -102,10 +102,10 @@ export class ManageServices extends Component {
                 src="https://cdn1.goibibo.com/voy_mmt/t_g/htl-imgs/201906151747438570-5ced5052caf811e99e200242ac110002.jpg"
                 alt=""
               />
-              <h5>Type: {service.service_type}</h5>
-              <p>Description {service.description}</p>
-              <p>price :${service.price}</p>
-              <p>Discount: {service.discount}%</p>
+              <h5>Type : {service.service_type}</h5>
+              <p>Description : {service.description}</p>
+              <p>price : ${service.price}</p>
+              <p>Discount : {service.discount}%</p>
               {/*<button*/}
               {/*  type="button"*/}
               {/*  onClick={() => this.deleteService(service._id)}*/}
