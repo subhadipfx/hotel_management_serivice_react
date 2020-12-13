@@ -29,7 +29,7 @@ export class UserTable extends Component {
           </select>
         </td>
         <td>
-          <button type="button" onClick={() => this.handleUpdateUser()}>
+          <button type="button" className="update-role-btn" onClick={() => this.handleUpdateUser()}>
             Update
           </button>
         </td>

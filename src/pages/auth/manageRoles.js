@@ -43,7 +43,7 @@ export class ManageRoles extends Component {
   render() {
     return (
       <div>
-        <h1>Manage users</h1>
+        <h1 className="home-header">Manage users</h1>
         <table>
           <tbody>
             <tr>
