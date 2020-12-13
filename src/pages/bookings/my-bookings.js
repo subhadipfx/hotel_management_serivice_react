@@ -9,20 +9,24 @@ export class MyBookings extends Component {
   };
 
   componentDidMount() {
+    this.getBookings();
+  }
+
+  getBookings = () => {
     axios
-      .get(`${ApiUrl.TEST_URL}/booking-service`, {
-        headers: {
-          Authorization: `Bearer ${this.props.user.token}`,
-        },
-      })
-      .then((res) => {
-        this.setState({
-          myBookings: res.data.data,
+        .get(`${ApiUrl.TEST_URL}/booking-service`, {
+          headers: {
+            Authorization: `Bearer ${this.props.user.token}`,
+          },
+        })
+        .then((res) => {
+          this.setState({
+            myBookings: res.data.data,
+          });
+        })
+        .catch((err) => {
+          console.log(err);
         });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
   }
 
   handleRating = (data) => {
@@ -34,9 +38,8 @@ export class MyBookings extends Component {
       })
       .then((res) => {
         console.log(res);
-        // this.setState({
-        //   myBookings: res.data.data.data,
-        // });
+        alert(res.data.message);
+        this.getBookings();
       })
       .catch((err) => {
         console.log(err);

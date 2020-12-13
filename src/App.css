@@ -70,6 +70,10 @@ td select {
 /*  background-color: #dddddd;*/
 /*}*/
 
+select[name="rating"]{
+  padding: 5px 25px;
+  margin: 0 5px;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;

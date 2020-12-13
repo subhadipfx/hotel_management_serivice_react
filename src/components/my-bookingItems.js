@@ -14,7 +14,8 @@ export class MybookingItems extends Component {
           src="https://cdn1.goibibo.com/voy_mmt/t_g/htl-imgs/201906151747438570-5ced5052caf811e99e200242ac110002.jpg"
           alt=""
         />
-        {booking.service && (
+          <p>Booking Date : {new Date(booking.createdAt).toDateString()}</p>
+          {booking.service && (
           <>
             <p>Type : {booking.service.service_type}</p>
             <p>Description : {booking.service.description}</p>
@@ -36,6 +37,7 @@ export class MybookingItems extends Component {
             </select>
             <button
               type="button"
+              className="rating-btn"
               onClick={() =>
                 this.props.handleRating({
                   booking_id: booking._id,
@@ -48,7 +50,7 @@ export class MybookingItems extends Component {
           </>
         )}
 
-        {booking.status === "RATED" && <p>Rating: {booking.rating}</p>}
+        {booking.status === "RATED" && <p>Rating : {booking.rating}</p>}
       </div>
     );
   }
