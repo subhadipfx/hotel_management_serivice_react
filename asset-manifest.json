@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hotel_management_service_react/static/css/main.ee447edc.chunk.css",
+    "main.js": "/hotel_management_service_react/static/js/main.6a05fb2f.chunk.js",
+    "main.js.map": "/hotel_management_service_react/static/js/main.6a05fb2f.chunk.js.map",
+    "runtime-main.js": "/hotel_management_service_react/static/js/runtime-main.950d655a.js",
+    "runtime-main.js.map": "/hotel_management_service_react/static/js/runtime-main.950d655a.js.map",
+    "static/js/2.55e9a475.chunk.js": "/hotel_management_service_react/static/js/2.55e9a475.chunk.js",
+    "static/js/2.55e9a475.chunk.js.map": "/hotel_management_service_react/static/js/2.55e9a475.chunk.js.map",
+    "static/js/3.f2b1ea04.chunk.js": "/hotel_management_service_react/static/js/3.f2b1ea04.chunk.js",
+    "static/js/3.f2b1ea04.chunk.js.map": "/hotel_management_service_react/static/js/3.f2b1ea04.chunk.js.map",
+    "index.html": "/hotel_management_service_react/index.html",
+    "static/css/main.ee447edc.chunk.css.map": "/hotel_management_service_react/static/css/main.ee447edc.chunk.css.map",
+    "static/js/2.55e9a475.chunk.js.LICENSE.txt": "/hotel_management_service_react/static/js/2.55e9a475.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.950d655a.js",
+    "static/js/2.55e9a475.chunk.js",
+    "static/css/main.ee447edc.chunk.css",
+    "static/js/main.6a05fb2f.chunk.js"
+  ]
+}
