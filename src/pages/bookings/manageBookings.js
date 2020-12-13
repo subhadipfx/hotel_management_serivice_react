@@ -48,7 +48,7 @@ export class ManageBookings extends Component {
         {this.state.bookings &&
           this.state.bookings.map((booking) => (
             <div key={booking._id} className="booking-card">
-              {booking.service && <h5>Type: {booking.service.type}</h5>}
+              {booking.service && <h5>Type: {booking.service.service_type}</h5>}
               <p>Guest Name : {booking.guest.name}</p>
               <p>Guest Email : {booking.guest.email}</p>
               <p>Bill : ${booking.bill_amount}</p>
