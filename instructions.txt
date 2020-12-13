@@ -1,0 +1,12 @@
+To run react server locally follow the below steps:-
+
+1. run "npm install" in terminal inside the project folder.
+
+2. run npm start to run dev server.
+
+3. now application is running, You can login using following details or can register new as well.
+    email: "test_owner@yopmail.com" ( Owner Privileges )
+    email: "test_staff@yopmail.com" ( Staff Privileges )
+    email: "test_guest@yopmail.com" ( Guest Privileges )
+
+    **password for all this account is "password" itself.
